@@ -8,9 +8,13 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavItemBtn,
+  NavBtnLink,
 } from "./styles/NavbarStyle";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { Button } from "../Style/GlobalStyle";
+
 const NavBarComponents = () => {
   const [click, setClick] = useState(false);
 
@@ -20,8 +24,9 @@ const NavBarComponents = () => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo>
-              <NavIcon>LOGO</NavIcon>
+            <NavLogo to="/">
+              <NavIcon />
+              DTS
             </NavLogo>
             {/*TODO Hi and Bye To Be Replced By Mobile Icons*/}
             <MobileIcon onClick={handleClick}>
@@ -37,9 +42,12 @@ const NavBarComponents = () => {
               <NavItem>
                 <NavLinks to="/principles">Principles</NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks to="/contact_us">Contact Us</NavLinks>
-              </NavItem>
+
+              <NavItemBtn>
+                <NavBtnLink to="/contact_us">
+                  <Button variant="secondary">Contact Us</Button>
+                </NavBtnLink>
+              </NavItemBtn>
             </NavMenu>
           </NavbarContainer>
         </Nav>
