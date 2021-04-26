@@ -1,9 +1,12 @@
+import React from "react";
+import NavBarComponents from "./Components/NavBarComponents";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      Removing Unwanted Files
-    </div>
+    <Router>
+      <NavBarComponents />
+    </Router>
   );
 }
 
