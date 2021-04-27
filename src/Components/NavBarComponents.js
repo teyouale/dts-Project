@@ -34,7 +34,7 @@ const NavBarComponents = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/about_us">About us</NavLinks>
+                <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/services">Services</NavLinks>
