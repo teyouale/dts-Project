@@ -10,12 +10,6 @@ function Home(props) {
       <InfoSectionComponents {...homeObjTwo} />
       <FeaturedSectionComponents />
       <Services />
-
-      <img
-        style={{ position: "sticky" }}
-        alt="Code Time"
-        src="https://img.shields.io/endpoint?style=flat&url=https://codetime-api.datreks.com/badge/684?logoColor=white%26project=dts_project%26recentMS=0%26showProject=false"
-      />
     </div>
   );
 }

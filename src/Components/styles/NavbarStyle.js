@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Container } from "../../Style/GlobalStyle";
-import { FaMagento } from "react-icons/fa";
+import { FaStumbleuponCircle } from "react-icons/all";
 
 export const Nav = styled.nav`
   background: #101522;
@@ -30,7 +30,7 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
 `;
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled(FaStumbleuponCircle)`
   margin-right: 0.5rem;
 `;
 export const MobileIcon = styled.div`
