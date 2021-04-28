@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FaMagento } from "react-icons/fa";
 import { Link as LinkR } from "react-router-dom";
 import { FaStumbleuponCircle } from "react-icons/all";
 
@@ -51,7 +50,6 @@ export const FormInput = styled.input`
   border-radius: 2px;
   margin-right: 10px;
   outline: none;
-  border: none;
   font-size: 16px;
   border: 1px solid #fff;
 

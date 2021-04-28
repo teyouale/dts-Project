@@ -87,9 +87,9 @@ function Footer(props) {
         <SocialMediaWrap>
           <SocialLogo to="/">
             <SocialIcon />
-            ULTRA
+            DTS
           </SocialLogo>
-          <WebsiteRights>ULTRA © 2020</WebsiteRights>
+          <WebsiteRights>DTS © 2020</WebsiteRights>
           <SocialIcons>
             <SocialIconLink href="/" target="_blank" aria-label="Facebook">
               <FaFacebook />
