@@ -1,13 +1,15 @@
 import React from "react";
 import InfoSectionComponents from "../../Components/InfoSectionComponents";
-import { homeObjOne } from "./data";
+import { homeObjOne, homeObjTwo } from "./data";
 import FeaturedSectionComponents from "../../Components/FeaturedSectionComponents";
-import svgImage from "../../image/svg-1.svg";
+import Services from "../ServicesPage/Services";
 function Home(props) {
   return (
     <div>
       <InfoSectionComponents {...homeObjOne} />
+      <InfoSectionComponents {...homeObjTwo} />
       <FeaturedSectionComponents />
+      <Services />
 
       <img
         style={{ position: "sticky" }}

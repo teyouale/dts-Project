@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import svgImage from "../image/svg-1.svg";
+
 import {
   Heading,
   Img,
@@ -15,6 +15,7 @@ import {
 import { Button, Container } from "../Style/GlobalStyle";
 
 function InfoSectionComponents({
+  lightBg,
   primary,
   topLine,
   lightTopLine,
@@ -30,7 +31,7 @@ function InfoSectionComponents({
 }) {
   return (
     <>
-      <InfoSection>
+      <InfoSection lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
@@ -47,7 +48,7 @@ function InfoSectionComponents({
             </InfoColumn>
             <InfoColumn>
               <ImgWrapper start={start}>
-                <Img src={svgImage} alt={alt} />
+                <Img src={img} alt={alt} />
               </ImgWrapper>
             </InfoColumn>
           </InfoRow>

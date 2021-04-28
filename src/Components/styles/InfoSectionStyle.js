@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const InfoSection = styled.div`
+  background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
   color: #fff;
   padding: 80px 0;
 `;

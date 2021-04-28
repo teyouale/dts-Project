@@ -20,7 +20,7 @@ function FeaturedCardComponents({ iconNumber }) {
         </FeaturedCardHeader>
         <FeaturedCardContent>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          ducimus error in iste magni possimus veniam. Ad adipisci corporis .
+          ducimus error in iste magni possimus veniam.
         </FeaturedCardContent>
       </FeaturedCardContainer>
     </FeaturedCard>

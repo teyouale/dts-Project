@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const FeaturedSection = styled.div`
+  padding-top: 80px;
+  background: #101522;
   color: #fff;
 `;
 export const FeaturedColumn = styled.div`
