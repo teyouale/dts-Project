@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 import { Container } from "../../Style/GlobalStyle";
 import { FaStumbleuponCircle } from "react-icons/all";
 
 export const Nav = styled.nav`
+  // Chang Bg Nav When scroll
+  //background: ${({ scrollNav }) => (scrollNav ? "red" : "transparent")};
   background: #101522;
   height: 80px;
   display: flex;
@@ -66,35 +69,18 @@ export const NavMenu = styled.ul`
 `;
 export const NavItem = styled.li`
   height: 80px;
-  border-bottom: 2px solid transparent;
-  &:hover {
-    border-bottom: 2px solid #4b59f7;
-  }
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    &:hover {
-      border: none;
-    }
-  }
 `;
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-
-    &:hover {
-      color: #4b59f7;
-      transition: all 0.3s ease;
-    }
+  cursor: pointer;
+  &.active {
+    border-bottom: 3px solid #4b59f7;
   }
 `;
 
@@ -108,7 +94,7 @@ export const NavItemBtn = styled.li`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled(LinkS)`
   display: flex;
   justify-content: center;
   align-items: center;

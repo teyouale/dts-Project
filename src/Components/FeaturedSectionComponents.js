@@ -11,9 +11,9 @@ import { Container } from "../Style/GlobalStyle";
 import FeaturedCardComponents from "./FeaturedCardComponents";
 import { icon1, icon2, icon3, icon4, icon5, icon6 } from "../image/index";
 
-function FeaturedSectionComponents(props) {
+function FeaturedSectionComponents({ id }) {
   return (
-    <FeaturedSection>
+    <FeaturedSection id={id}>
       <Container>
         <FeaturedColumn>
           <FeaturedHeader>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   FooterContainer,
   FooterSubscription,
@@ -29,10 +29,14 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { Button } from "../Style/GlobalStyle";
+import { animateScroll as scroll } from "react-scroll";
 
-function Footer(props) {
+const Footer = ({ id }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
-    <FooterContainer>
+    <FooterContainer id={id}>
       <CodingTimeimg
         alt="Code Time"
         src="https://img.shields.io/endpoint?style=flat&url=https://codetime-api.datreks.com/badge/684?logoColor=white%26project=dts_project%26recentMS=0%26showProject=false"
@@ -85,7 +89,7 @@ function Footer(props) {
       </FooterLinksContainer>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to="/">
+          <SocialLogo to="/" onClick={toggleHome}>
             <SocialIcon />
             DTS
           </SocialLogo>
@@ -116,6 +120,6 @@ function Footer(props) {
       </SocialMedia>
     </FooterContainer>
   );
-}
+};
 
 export default Footer;

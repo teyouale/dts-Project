@@ -17,10 +17,10 @@ import { GiCrystalBars, GiCutDiamond, GiRock } from "react-icons/gi";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../Style/GlobalStyle";
 
-function ServicesSectionComponents(props) {
+function ServicesSectionComponents({ id }) {
   return (
     <IconContext.Provider value={{ color: "#a9b3c1", size: 64 }}>
-      <PricingSection>
+      <PricingSection id={id}>
         <PricingWrapper>
           <PricingHeading>Our Services</PricingHeading>
           <PricingContainer>
