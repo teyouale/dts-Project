@@ -1,10 +1,10 @@
 import React from "react";
 import ServicesSectionComponents from "../../Components/ServicesSectionComponents";
 
-function Services({ id }) {
+function Services(props) {
   return (
     <div>
-      <ServicesSectionComponents id={id} />
+      <ServicesSectionComponents />
     </div>
   );
 }

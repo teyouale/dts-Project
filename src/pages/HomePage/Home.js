@@ -6,10 +6,10 @@ import Services from "../ServicesPage/Services";
 function Home(props) {
   return (
     <div>
-      <InfoSectionComponents id={"Home"} {...homeObjOne} />
+      <InfoSectionComponents {...homeObjOne} />
       <InfoSectionComponents {...homeObjTwo} />
-      <FeaturedSectionComponents id={"principles"} />
-      <Services id={"services"} />
+      <FeaturedSectionComponents />
+      <Services />
     </div>
   );
 }

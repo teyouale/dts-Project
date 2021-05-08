@@ -15,7 +15,6 @@ import {
 import { Button, Container } from "../Style/GlobalStyle";
 
 function InfoSectionComponents({
-  id,
   lightBg,
   primary,
   topLine,
@@ -32,7 +31,7 @@ function InfoSectionComponents({
 }) {
   return (
     <>
-      <InfoSection lightBg={lightBg} id={id}>
+      <InfoSection lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
